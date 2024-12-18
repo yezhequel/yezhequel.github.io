@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Background</title>
+</head>
+<body>
+
+  <table style="background-color: #f2f2f2; width: 100%; border: 1px solid black;">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Link Example</title>
+</head>
+<body>
+    <h1>Worker Profile</h1>
+    <p>Click the link below to view the worker's profile:</p>
+    <a href="worker-profile.html" target="_blank">View Worker Profile</a>
+</body>
+</html>
+
+
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async HTML with JavaScript</title>
+</head>
+<body>
+    <h1>Concurrent Actions in HTML</h1>
+    <button id="loadDataButton">Load Data</button>
+    <div id="dataOutput"></div>
+
+    <script>
+        document.getElementById('loadDataButton').addEventListener('click', function() {
+            // Simulating a concurrent API call using async/await
+            loadData();
+        });
+
+        async function loadData() {
+            try {
+                document.getElementById('dataOutput').innerHTML = "Loading data...";
+
+                // Simulating a delay to mimic fetching data (e.g., an API request)
+                let response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+                let data = await response.json();
+
+                document.getElementById('dataOutput').innerHTML = `
+                    <h2>Data Loaded:</h2>
+                    <p><strong>Title:</strong> ${data.title}</p>
+                    <p><strong>Body:</strong> ${data.body}</p>
+                `;
+            } catch (error) {
+                document.getElementById('dataOutput').innerHTML = "Error loading data.";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy of a Lake</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .section {
+            padding: 20px;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Anatomy of a Lake</h1>
+</header>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">1. Surface Water (Epilimnion)</div>
+        <p>This is the uppermost layer of water in a lake, where sunlight can penetrate. It is warmer than the deeper layers and typically has more dissolved oxygen.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">2. Thermocline</div>
+        <p>The thermocline is a layer of rapid temperature change, found beneath the surface water and above the deep water layer. It acts as a barrier for water mixing.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">3. Deep Water (Hypolimnion)</div>
+        <p>This is the deepest layer of water in a lake. It is cooler, denser, and has less oxygen than the surface water.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">4. Lake Bed (Benthic Zone)</div>
+        <p>The benthic zone is the bottom of the lake, where organisms like benthos live. It is made up of sediments and is home to decomposers.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">5. Inflow and Outflow</div>
+        <p>The inflow is the water entering the lake, often from rivers, streams, or precipitation. The outflow is where water exits the lake, often leading to rivers or other bodies of water.</p>
+    </div>
+</div>
+
+</body>
+</html>
+
+HTML CODE WITH NOTEPAD
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This is a paragraph about myself. I love coding and creating websites!</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>Here are the services I offer:</p>
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>SEO Optimization</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 My Webpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+BUILDING BLOCKS OF HTML
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>This is a simple HTML page demonstrating basic structure and tags.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Design</li>
+            <li>Web Development</li>
+            <li>SEO Optimization</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for
+
+
+STRUCTURE OF A HTML
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Text Editor</title>
+  <style>
+    .toolbar {
+      margin-bottom: 10px;
+    }
+    #editor {
+      width: 100%;
+      height: 300px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Basic HTML Text Editor</h1>
+  
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <button onclick="formatText('bold')">Bold</button>
+    <button onclick="formatText('italic')">Italic</button>
+    <button onclick="formatText('underline')">Underline</button>
+  </div>
+  
+  <!-- Editable Content -->
+  <div id="editor" contenteditable="true">
+    Type your text here...
+  </div>
+
+  <script>
+    // Function to format text
+    function formatText(command) {
+      document.execCommand(command, false, null);
+    }
+  </script>
+</body>
+</html>
+
+
+Basic HTML structure tags
+•<!DOCTYPE html>
+<html>
+<head>
+    <title>My First HTML Page</title>
+</head>
+<body>
+    <h1>Welcome to My Website!</h1>
+    <p>This is a simple HTML page created using Notepad.</p>
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+</body>
+</html>
+
+
+Basic structure 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Page</title>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    <p>This is a basic HTML page.</p>
+</body>
+</html>
+
+
+Website structure 
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Structure</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>Section 1</h2>
+            <p>This is the content of section 1.</p>
+        </section>
+        <section id="section2">
+            <h2>Section 2</h2>
+            <p>This is the content of section 2.</p>
+        </section>
+        <section id="section3">
+            <h2>Section 3</h2>
+            <p>This is the content of section 3.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>
+
+
+Ordered lists
+html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered List Example</title>
+</head>
+<body>
+
+    <h2>My Favorite Fruits</h2>
+    <ol>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Grapes</li>
+    </ol>
+
+</body>
+</html>
+
+
+Dynamic List with JavaScript
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control List Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .list-container {
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            background-color: #f1f1f1;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .count {
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<div class="list-container">
+    <h2>Control List</h2>
+    <ul id="controlList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <p>Total Items in List: <span id="itemCount" class="count"></span></p>
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeItem()">Remove Item</button>
+</div>
+
+<script>
+    function updateItemCount() {
+        var list = document.getElementById('controlList');
+        var itemCount = list.children.length;
+        document.getElementById('itemCount').textContent = itemCount;
+    }
+
+    function addItem() {
+        var list = document.getElementById('controlList');
+        var newItem = document.createElement('li');
+        newItem.textContent = 'New Item';
+        list.appendChild(newItem);
+        updateItemCount();
+    }
+
+    function removeItem() {
+        var list = document.getElementById('controlList');
+        if (list.children.length > 0) {
+            list.removeChild(list.lastElementChild);
+            updateItemCount();
+        }
+    }
+
+    // Initialize count on page load
+    window.onload = updateItemCount;
+</script>
+
+</body>
+</html>
+
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Table</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>28</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Anna</td>
+                <td>24</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>Mike</td>
+                <td>32</td>
+                <td>Paris</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+Structure of table in HTML
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Structure</title>
+</head>
+<body>
+
+    <table border="1">
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 3, Cell 1</td>
+                <td>Row 3, Cell 2</td>
+                <td>Row 3, Cell 3</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer (optional) -->
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
+
+
+creating table with a border
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Border</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+
+Semantic Structure of Tables:
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Headings</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+            </tr>
+            <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+            </tr>
+            <tr>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Background</title>
+</head>
+<body>
+
+  <table style="background-color: #f2f2f2; width: 100%; border: 1px solid black;">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+
+creating and styling tables.
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Background</title>
+</head>
+<body>
+
+  <table style="background-color: #f2f2f2; width: 100%; border: 1px solid black;">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+
+Linking between pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Link Example</title>
+</head>
+<body>
+    <h1>Worker Profile</h1>
+    <p>Click the link below to view the worker's profile:</p>
+    <a href="worker-profile.html" target="_blank">View Worker Profile</a>
+</body>
+</html>
+
+
+asynchronous JavaScript in web development
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async HTML with JavaScript</title>
+</head>
+<body>
+    <h1>Concurrent Actions in HTML</h1>
+    <button id="loadDataButton">Load Data</button>
+    <div id="dataOutput"></div>
+
+    <script>
+        document.getElementById('loadDataButton').addEventListener('click', function() {
+            // Simulating a concurrent API call using async/await
+            loadData();
+        });
+
+        async function loadData() {
+            try {
+                document.getElementById('dataOutput').innerHTML = "Loading data...";
+
+                // Simulating a delay to mimic fetching data (e.g., an API request)
+                let response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+                let data = await response.json();
+
+                document.getElementById('dataOutput').innerHTML = `
+                    <h2>Data Loaded:</h2>
+                    <p><strong>Title:</strong> ${data.title}</p>
+                    <p><strong>Body:</strong> ${data.body}</p>
+                `;
+            } catch (error) {
+                document.getElementById('dataOutput').innerHTML = "Error loading data.";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+anatomy of a lake.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy of a Lake</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .section {
+            padding: 20px;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Anatomy of a Lake</h1>
+</header>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">1. Surface Water (Epilimnion)</div>
+        <p>This is the uppermost layer of water in a lake, where sunlight can penetrate. It is warmer than the deeper layers and typically has more dissolved oxygen.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">2. Thermocline</div>
+        <p>The thermocline is a layer of rapid temperature change, found beneath the surface water and above the deep water layer. It acts as a barrier for water mixing.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">3. Deep Water (Hypolimnion)</div>
+        <p>This is the deepest layer of water in a lake. It is cooler, denser, and has less oxygen than the surface water.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">4. Lake Bed (Benthic Zone)</div>
+        <p>The benthic zone is the bottom of the lake, where organisms like benthos live. It is made up of sediments and is home to decomposers.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">5. Inflow and Outflow</div>
+        <p>The inflow is the water entering the lake, often from rivers, streams, or precipitation. The outflow is where water exits the lake, often leading to rivers or other bodies of water.</p>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+aspects of HTML
+•<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy of a Lake</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .section {
+            padding: 20px;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Anatomy of a Lake</h1>
+</header>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">1. Surface Water (Epilimnion)</div>
+        <p>This is the uppermost layer of water in a lake, where sunlight can penetrate. It is warmer than the deeper layers and typically has more dissolved oxygen.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">2. Thermocline</div>
+        <p>The thermocline is a layer of rapid temperature change, found beneath the surface water and above the deep water layer. It acts as a barrier for water mixing.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">3. Deep Water (Hypolimnion)</div>
+        <p>This is the deepest layer of water in a lake. It is cooler, denser, and has less oxygen than the surface water.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">4. Lake Bed (Benthic Zone)</div>
+        <p>The benthic zone is the bottom of the lake, where organisms like benthos live. It is made up of sediments and is home to decomposers.</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="content">
+        <img src="lake-diagram.jpg" alt="Lake Diagram">
+        <div class="label">5. Inflow and Outflow</div>
+        <p>The inflow is the water entering the lake, often from rivers, streams, or precipitation. The outflow is where water exits the lake, often leading to rivers or other bodies of water.</p>
+    </div>
+</div>
+
+</body>
+</html>
